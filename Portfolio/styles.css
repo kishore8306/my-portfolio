@@ -1,0 +1,569 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+/* =========================
+   NEW TECH THEME (SAFE)
+========================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #0e1a14, #060b09 75%);
+    color: #e6fff4;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+/* Accent color override */
+.logo span,
+.section-title,
+.exp-card h4,
+.modal-box h3 {
+    color: #00f5d4;
+}
+
+/* Glass cards improvement */
+.project-card,
+.exp-card,
+.contact-container,
+.modal-box {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(0,245,212,0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+/* Buttons – premium */
+.btn-primary,
+.details-btn,
+.submit-btn,
+.contact-btn {
+    background: linear-gradient(135deg, #00f5d4, #7c7cff);
+    color: #05060f;
+    font-weight: 700;
+}
+
+/* Hover refinement */
+.btn-primary:hover,
+.details-btn:hover,
+.submit-btn:hover {
+    box-shadow: 0 10px 30px rgba(0,245,212,0.45);
+}
+
+/* =========================
+   BISON 3D OUTLINE BACKGROUND
+========================= */
+
+/* =========================
+   BISON 3D OUTLINE BACKGROUND
+========================= */
+
+
+
+
+/* Ensure content stays above */
+nav,
+section,
+footer,
+.hero {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(145deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 0 0 20px 20px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #20ffad;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    color: #20ffad;
+}
+
+
+/* =========================
+   GREEN + NEON TECH COLORS
+========================= */
+
+.logo span,
+.section-title,
+.exp-card h4,
+.modal-box h3 {
+    color: #2bff88;
+}
+
+/* Cards – glass tech */
+.project-card,
+.exp-card,
+.contact-container,
+.modal-box {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(43,255,136,0.18);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+}
+
+/* Tags */
+.tags span {
+    background: linear-gradient(135deg, #2bff88, #00c853);
+    color: #062112;
+}
+
+
+.contact-btn {
+    background: linear-gradient(90deg, #34eb8c, #20ffad);
+    color: #0a1f17;            /* darker text for readability */
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+/* Hover – reduced glow so text stays visible */
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(32, 255, 173, 0.35); /* reduced glow */
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 80px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.hero-content h2 {
+    color: #20ffad;
+    margin: 10px 0;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #34eb8c, #20ffad);
+    color: #0b0b0b;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(32,255,173,0.4);
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+.hero-image {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border: 3px solid #20ffad;
+    transition: transform 0.3s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+.glow-circle {
+    width: 200px;
+    height: 200px;
+    background: #20ffad;
+    filter: blur(100px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #20ffad;
+}
+
+/* =========================
+   EXPERTISE GRID
+========================= */
+/* =========================
+   EXPERTISE – ONE BY ONE
+========================= */
+.expertise-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.exp-card {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255,255,255,0.06);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(32,255,173,0.35);
+}
+
+.exp-card h4 {
+    color: #20ffad;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   PROJECTS GRID
+========================= */
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.project-card {
+    flex: 1 1 300px;
+    max-width: 400px;
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(32,255,173,0.1);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(32,255,173,0.4);
+}
+
+.tags span {
+    display: inline-block;
+    margin: 10px;
+    padding: 6px 12px;
+    background: #20ffad;
+    color: black;
+    border-radius: 20px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.details-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.details-btn {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(90deg, #34eb8c, #20ffad);
+    color: #0b0b0b;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(32, 255, 173, 0.4);
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+.contact-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    background: rgba(255,255,255,0.05);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    background: linear-gradient(90deg, #34eb8c, #20ffad);
+    color: #0b0b0b;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(32,255,173,0.4);
+}
+
+/* =========================
+   MODAL
+========================= */
+.modal-overlay {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.85);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:0.4s ease;
+    z-index:9999;
+}
+
+.modal-overlay.show {
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+}
+
+.modal-box {
+    background: rgba(20,20,20,0.9);
+    padding: 30px;
+    max-width: 520px;
+    width: 90%;
+    border-radius: 20px;
+    text-align: center;
+    animation: popup 0.4s ease;
+    backdrop-filter: blur(8px);
+}
+
+.modal-box h3 {
+    color:#20ffad;
+    margin-bottom:15px;
+}
+
+.modal-box p {
+    line-height:1.6;
+    margin-bottom:10px;
+}
+
+.modal-box ul {
+    text-align:left;
+    margin:15px 0;
+}
+
+.modal-box ul li {
+    margin-bottom:6px;
+}
+
+.close-btn {
+    margin-top: 15px;
+    padding: 10px 22px;
+    border: none;
+    background: #20ffad;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@keyframes popup {
+    from { transform: scale(0.85); opacity:0; }
+    to { transform: scale(1); opacity:1; }
+}
+
+/* =========================
+   SOCIAL FOOTER
+========================= */
+.social-footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 0;
+}
+
+.social-footer img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.social-footer img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media screen and (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        margin-top: 30px;
+    }
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .projects-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 30px;
+    }
+}
+
+/* =========================
+   SNOW EFFECT (HOME PAGE)
+========================= */
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    animation-name: snow-fall;
+    animation-timing-function: linear;
+    filter: blur(0.5px);
+}
+
+
+@keyframes snow-fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Keep content above snow */
+.hero,
+nav,
+section,
+footer {
+    position: relative;
+    z-index: 2;
+}
